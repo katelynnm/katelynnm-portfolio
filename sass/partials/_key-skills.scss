@@ -1,0 +1,51 @@
+#list-of-skills > p {
+	max-width: 320px;
+	padding: 10px 30px;
+	margin: 0;
+	color: white;
+	font-size: 1.25rem;
+
+	&:hover {
+		max-width: 370px;
+		transition: 1s ease-in-out;
+		font-size: 1.75rem;
+
+	}
+
+	&#web-design {
+		background: $rusty-red;
+	}
+
+	&#info-design {
+		background: $orchid;
+	}
+
+	&#digital-assets {
+		background: $cool-blue;
+	}
+
+	&#identity-design {
+		background: $teal;
+	}
+
+	&#content-strategy {
+		background: $green;
+	}
+
+	&#print-design {
+		background: $lime;
+	}
+
+	&#adobe-cs {
+		background: $goldenrod;
+	}
+
+	&#microsoft {
+		background: $rusty-red;
+	}
+
+
+}
+
+
+

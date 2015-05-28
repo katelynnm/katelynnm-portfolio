@@ -1,0 +1,367 @@
+/* line 1, ../sass/partials/_isotope.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/partials/_isotope.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+/* line 13, ../sass/partials/_isotope.scss */
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+/* line 27, ../sass/partials/_isotope.scss */
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  color: #222;
+}
+
+/* line 34, ../sass/partials/_isotope.scss */
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+/* line 38, ../sass/partials/_isotope.scss */
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+}
+
+/* line 43, ../sass/partials/_isotope.scss */
+.button:active {
+  box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ---- button-group ---- */
+/* line 49, ../sass/partials/_isotope.scss */
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 55, ../sass/partials/_isotope.scss */
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+/* line 62, ../sass/partials/_isotope.scss */
+.button-group .button:first-child {
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+/* line 63, ../sass/partials/_isotope.scss */
+.button-group .button:last-child {
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+/* ---- isotope ---- */
+/* line 67, ../sass/partials/_isotope.scss */
+.isotope {
+  border: 1px solid #333;
+}
+
+/* clear fix */
+/* line 72, ../sass/partials/_isotope.scss */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* line 2, ../sass/partials/_global.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/partials/_global.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Global */
+/* line 13, ../sass/partials/_global.scss */
+body {
+  font-family: 'Lato', sans-serif;
+  display: block;
+  color: #4a4a4a;
+}
+
+/* line 19, ../sass/partials/_global.scss */
+.hidden {
+  display: none;
+}
+
+/* line 23, ../sass/partials/_global.scss */
+.clear {
+  clear: both;
+}
+
+/* line 27, ../sass/partials/_global.scss */
+.clear-fix {
+  overflow: auto;
+}
+
+/* line 31, ../sass/partials/_global.scss */
+.container, nav {
+  width: 1080px;
+  max-width: 99%;
+  margin: 0 auto;
+}
+
+/* line 38, ../sass/partials/_global.scss */
+.col1, .col2 {
+  width: 49.7%;
+}
+
+/* line 42, ../sass/partials/_global.scss */
+.col1 {
+  float: left;
+}
+
+/* line 46, ../sass/partials/_global.scss */
+.col2 {
+  float: right;
+}
+
+/* Footer */
+/* line 2, ../sass/partials/_footer.scss */
+footer ul {
+  list-style: none;
+  color: #959595;
+  -webkit-padding-start: 0px;
+}
+
+/* line 8, ../sass/partials/_footer.scss */
+footer ul li {
+  display: inline-block;
+}
+
+/* line 12, ../sass/partials/_footer.scss */
+footer ul li:after {
+  content: ' | ';
+}
+
+/* line 16, ../sass/partials/_footer.scss */
+footer ul li:last-child:after {
+  content: '';
+}
+
+/* Navigation */
+/* line 3, ../sass/partials/_header.scss */
+.main-nav {
+  background: rgba(255, 255, 255, 0.95);
+  /*		border-bottom: 1px solid #ccc;
+  */
+  z-index: 150;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  height: 86px;
+}
+
+/* line 16, ../sass/partials/_header.scss */
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+/* line 22, ../sass/partials/_header.scss */
+nav ul li {
+  float: left;
+  list-style: none;
+  font-size: .65rem;
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
+}
+/* line 30, ../sass/partials/_header.scss */
+nav ul li:not(.km-logo) {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 6.5% 13px 6.5%;
+  width: 21%;
+  margin: 50px auto 0;
+}
+/* line 39, ../sass/partials/_header.scss */
+nav ul li#nav-select {
+  color: #ff5e00;
+  font-weight: 900;
+}
+
+/* line 50, ../sass/partials/_header.scss */
+nav li:not(.km-logo) a {
+  color: #4a4a4a;
+}
+/* line 54, ../sass/partials/_header.scss */
+nav li a {
+  text-decoration: none;
+  text-align: center;
+}
+/* line 58, ../sass/partials/_header.scss */
+nav li a:hover {
+  color: #ee5800;
+}
+
+/* line 64, ../sass/partials/_header.scss */
+.km-logo a {
+  font-family: "Bevan", serif;
+  color: #ff5e00;
+  font-size: 3.75rem;
+  padding: 0 30px;
+}
+
+/* line 72, ../sass/partials/_header.scss */
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 7px 1px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0px 0px 7px 1px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0px 0px 7px 1px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  border-bottom: 1px solid #ccc;
+}
+/* line 82, ../sass/partials/_header.scss */
+.main-nav-scrolled li:not(.km-logo) {
+  margin: 40px auto;
+  border-bottom: none;
+}
+/* line 87, ../sass/partials/_header.scss */
+.main-nav-scrolled li.km-logo a {
+  font-size: 2.4rem;
+  margin-top: 13px;
+  padding: 0 47px;
+}
+
+/* line 1, ../sass/partials/_section.scss */
+section {
+  margin: 80px auto;
+  border-bottom: 1px solid #ccc;
+  padding: 0 7% 80px;
+  overflow: hidden;
+}
+
+/* line 8, ../sass/partials/_section.scss */
+.welcome {
+  width: 420px;
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+/* line 18, ../sass/partials/_section.scss */
+#portfolio-previews .text-previews {
+  float: right;
+  max-width: 35%;
+  padding-left: 20px;
+}
+/* line 25, ../sass/partials/_section.scss */
+#portfolio-previews .portfolio-thumbnail {
+  margin: 0;
+  width: 100%;
+}
+/* line 32, ../sass/partials/_section.scss */
+#portfolio-previews #photo-previews {
+  max-width: 60%;
+  float: left;
+  overflow: hidden;
+}
+/* line 39, ../sass/partials/_section.scss */
+#portfolio-previews .teaser {
+  padding-top: 30px;
+}
+
+/* Typography */
+/* line 3, ../sass/partials/_typography.scss */
+p {
+  line-height: 1.6;
+}
+
+/* line 7, ../sass/partials/_typography.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 12, ../sass/partials/_typography.scss */
+.drop-caps {
+  font-family: "Bevan", serif;
+  color: #DBDBDB;
+  font-size: 2.4rem;
+  margin: -5px 20px -5px 0;
+  float: left;
+}
+
+/* line 1, ../sass/partials/_key-skills.scss */
+#list-of-skills > p {
+  max-width: 320px;
+  padding: 10px 30px;
+  margin: 0;
+  color: white;
+  font-size: 1.25rem;
+}
+/* line 8, ../sass/partials/_key-skills.scss */
+#list-of-skills > p:hover {
+  max-width: 370px;
+  transition: 1s ease-in-out;
+  font-size: 1.75rem;
+}
+/* line 15, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#web-design {
+  background: #d14d3c;
+}
+/* line 19, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#info-design {
+  background: #964a8b;
+}
+/* line 23, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#digital-assets {
+  background: #008bc7;
+}
+/* line 27, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#identity-design {
+  background: #34c2ac;
+}
+/* line 31, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#content-strategy {
+  background: #14cc64;
+}
+/* line 35, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#print-design {
+  background: #a5c741;
+}
+/* line 39, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#adobe-cs {
+  background: #f2bd1d;
+}
+/* line 43, ../sass/partials/_key-skills.scss */
+#list-of-skills > p#microsoft {
+  background: #d14d3c;
+}

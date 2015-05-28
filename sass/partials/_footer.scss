@@ -1,0 +1,18 @@
+/* Footer */
+	footer ul {
+		list-style: none;
+		color: #959595;
+	  -webkit-padding-start: 0px;
+	}
+
+	footer ul li {
+		display: inline-block;
+	}
+
+	footer ul li:after {
+		content:' | ';
+	}
+
+	footer ul li:last-child:after {
+		content:'';
+	}

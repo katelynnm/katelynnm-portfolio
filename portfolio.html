@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<title>Kate Miller &mdash; Graphic Designer</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Bevan' rel='stylesheet' type='text/css'>
+	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/kate-main.css">
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+</head>
+<body>
+	<div class="main-nav">
+		<nav>
+			<ul class="clear-fix">
+				<li id="nav-select"><a href="portfolio.html">Work</a></li>
+				<li>R&#233;sum&#233;</li>
+				<li class="km-logo"><a href="index.html">km</a></li>
+				<li>About</li>
+				<li>Connect</li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div class="container">
+		<div id="filters" class="button-group">
+		 	<button class="button is-checked" data-filter="*">show all</button>
+		 	<button class="button" data-filter=".web-design">Web Design</button>
+			<button class="button" data-filter=".print-design">Print Design</button>
+			<button class="button" data-filter=".identity-design">Identity Design</button>
+			<button class="button" data-filter=":not(.transition)">not transition</button>
+			<button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+			<button class="button" data-filter="numberGreaterThan50">number > 50</button>
+			<button class="button" data-filter="ium">name ends with &ndash;ium</button>
+		</div>
+
+		<div id="sorts" class="button-group">  <button class="button is-checked" data-sort-by="original-order">original order</button>
+			<button class="button" data-sort-by="name">name</button>
+			<button class="button" data-sort-by="symbol">symbol</button>
+			<button class="button" data-sort-by="number">number</button>
+			<button class="button" data-sort-by="weight">weight</button>
+			<button class="button" data-sort-by="category">category</button>
+		</div>
+
+
+		<div class="isotope">
+			<div class="portfolio-cover web-design" data-category="web-design"><img src="http://placehold.it/320x210" class="portfolio-thumbnail active" id="piece1"></div>
+			<div class="portfolio-cover web-design" data-category="print-design"><img src="http://placehold.it/320x210" class="portfolio-thumbnail active" id="piece1"></div>
+			<div class="portfolio-cover print-design"><img src="http://placehold.it/320x210" class="portfolio-thumbnail active" id="piece1"></div>
+			<div class="portfolio-cover identity-design"><img src="http://placehold.it/320x210" class="portfolio-thumbnail active" id="piece1"></div>
+			<div class="portfolio-cover identity-design adobe-cs"><img src="http://placehold.it/320x210" class="portfolio-thumbnail active" id="piece1"></div>
+			<div class="portfolio-cover information-design"><img src="http://placehold.it/320x210" class="portfolio-thumbnail active" id="piece1"></div>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script type="text/javascript" src="js/loader.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		<script type="text/javascript" src="js/kate-main.js"></script>
+
+</body>
+</html>
