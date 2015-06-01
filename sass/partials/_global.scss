@@ -4,7 +4,9 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
 }
 
 
@@ -37,10 +39,12 @@ body {
 
 .col1, .col2 {
 	width: 49.7%;
+	@include respond-to(handhelds) { width:100% ;}
 }
 
 .col1 {
 	float: left;
+	@include respond-to(handhelds) { float: none; ;}
 }
 
 .col2 {

@@ -1,5 +1,5 @@
 #list-of-skills > p {
-	max-width: 320px;
+	max-width: 340px;
 	padding: 10px 30px;
 	margin: 0;
 	color: white;
@@ -7,9 +7,9 @@
 
 	&:hover {
 		max-width: 370px;
-		transition: 1s ease-in-out;
-		font-size: 1.75rem;
-
+		transition: .5s ease-in;
+		font-size: 1.45rem;
+		padding: 7px 30px;
 	}
 
 	&#web-design {
@@ -41,11 +41,19 @@
 	}
 
 	&#microsoft {
-		background: $rusty-red;
+		background: $blush;
 	}
 
 
 }
 
+
+// .off{
+//   opacity:0;
+//   -webkit-transition:none;
+//    -moz-transition:none;
+//    transition:none;
+
+// }
 
 
